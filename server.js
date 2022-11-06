@@ -1,4 +1,5 @@
 
+const cool = require('cool-ascii-faces');
 const express = require ('express')
 const app = express();
  app.set ('view engine','ejs');
@@ -55,24 +56,28 @@ app.get("/posts/:postName",(req, res)=>{
         console.log(post);
     if (storedtitle === requestTitle){
         res.render("post",{
-            title: post.title,
+            title: post.title, 
             content: post.content 
         });
-       
 
+       
+s
     }
         
   
     });
 });   
-    app.listen(5501)
+    app.listen(5010)
 
 
 
 
 
 
-    
+
+
+
+
 
 
 
